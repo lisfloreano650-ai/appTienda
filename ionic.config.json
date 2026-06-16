@@ -1,0 +1,7 @@
+{
+  "name": "appTiendaJWT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

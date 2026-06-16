@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nuevo Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-input
+      [(ngModel)]="nombre"
+      label="Nombre"
+      labelPlacement="floating">
+    </ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-input
+      [(ngModel)]="correo"
+      label="Correo"
+      labelPlacement="floating">
+    </ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-input
+      [(ngModel)]="telefono"
+      label="Teléfono"
+      labelPlacement="floating">
+    </ion-input>
+  </ion-item>
+
+  <br><br>
+
+  <ion-button expand="block" (click)="guardar()">
+    Guardar
+  </ion-button>
+
+</ion-content>
