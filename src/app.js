@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+//  RUTA DE PRUEBA (IMPORTANTE)
+app.get("/", (req, res) => {
+  res.json({ message: "API appTienda funcionando correctamente " });
+});
+
 // Rutas
 app.use("/api", authRoutes);
 app.use("/api", clientesRoutes);
