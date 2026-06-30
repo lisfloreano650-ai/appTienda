@@ -1,4 +1,8 @@
 import { createPool } from "mysql2/promise";
+import dotenv from "dotenv";
+
+dotenv.config();
+
 import {
     DB_DATABASE,
     DB_HOST,
@@ -7,7 +11,7 @@ import {
     DB_USER
 } from './config.js';
 
-export const conmyslq = createPool({
+export const conmysql = createPool({
     host: DB_HOST,
     database: DB_DATABASE,
     user: DB_USER,
